@@ -1,0 +1,4 @@
+Continuar con:
+- Lo que va debajo de la seccion 1
+- Formulario de contacto
+- Paginas de contenido y CV
