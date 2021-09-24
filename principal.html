@@ -41,6 +41,27 @@
 			</p>
 		</div>
 	</section>
+	<section class="contacto">
+		<h2>Contacto</h2>
+		<form id="formulario-contacto" action="#" method="POST">
+			<div class="form">
+				<label class="ingresa" for="name">Nombre</label><br/>
+				<input id="name" class="input" type="text" name="name" value=""/><br/>
+				<span id="name-validacion" class="mensaje-error"></span>
+			</div>
+			<div class="form">
+				<label class="ingresa" for="email">Email</label><br/>
+				<input id="email" class="input" type="text" name="email" value=""/><br/>
+				<span id="email-validacion" class="mensaje-error"></span>
+			</div>
+			<div class="form">
+				<label class="ingresa" for="mensaje">Tu Mensaje</label><br/>
+				<textarea id="mensaje" class="input" name="mensaje" rows="7" cols="30"></textarea><br/>
+				<span id="mensaje-validacion" class="mensaje-error"></span>
+			</div>
+		</form>
+		<input id="boton-submit" type="submit" value="Enviar Email"/>
+	</section>
 
 	<footer id="pie">Luis Manuel Romero Garcia</footer>
 </body>
