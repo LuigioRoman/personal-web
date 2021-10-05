@@ -6,6 +6,7 @@ body{
 	text-align: center;
 }
 
+
 header{
 	position: fixed;
 	margin-top: 25px;
@@ -111,6 +112,37 @@ a{
 	float: right;
 	background: #FC0F01;
 	font-size: 0.8em;
+}
+
+#articulo-elegido{
+	color: white;
+	width: 60%;
+	margin-top: 200px;
+	margin-left: 3%;
+	padding: 2%;
+	text-align: left;
+	border: 2px solid black;
+	background: rgba(5, 5, 5, 0.5);
+	border-radius: 5% / 15%;
+}
+
+#articulo-elegido p{
+	justify-content: right;
+}
+
+#imagen-de-articulo img{
+	width: 350px;
+	height: 197px;
+	float: right;
+}
+
+#imagen-de-articulo figcaption{
+	font-size: 0.8em;
+	float: right;
+}
+
+#imagen-de-articulo{
+	display: block;
 }
 
 #pie{
