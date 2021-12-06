@@ -52,14 +52,21 @@ $(document).ready(function(){
 				image: 'images/gato1.jpg'
 			},
 			{
-				id: 1,
+				id: 2,
 				title: 'Aprendiendo a desarrollar una pagina',
 				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
 				content: 'Hola! Esta es mi primer publicacion desde mi sitio web',
-				img: 'hey'
+				image: 'images/gato1.jpg'
 			},
 			{
-				id: 1,
+				id: 3,
+				title: 'Aprendiendo a desarrollar una pagina',
+				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+				content: 'Hola! Esta es mi primer publicacion desde mi sitio web',
+				image: 'images/img1.jpg'
+			},
+			{
+				id: 4,
 				title: 'Aprendiendo a desarrollar una pagina',
 				date: 'Publicado el dia ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
 				content: 'Hola! Esta es mi primer publicacion desde mi sitio web',
@@ -81,6 +88,38 @@ $(document).ready(function(){
 			`;
 
 			$("#contenido").append(post);
+		});
+
+		$(".post").mouseover(function(){
+			$(this).css({
+				"background": "rgba(5, 5, 5, 0.9)"
+			});
+			$(this).css("cursor", "pointer");
+		});
+
+		$(".post").mouseout(function(){
+			$(this).css({
+				"background": "rgba(0, 0, 0, 0)"
+			});
+		});
+		
+		$(".post").click(function(){
+			var title = posts[1].title;
+			var date = posts[1].date;
+			var content = posts[1].content;
+			var image = posts[1].image;
+			var postSelected = `
+			<article class="postSelected">
+				<h2>${title}</h2>
+				<span class="date">${date}</span>
+				<p>
+					${content}
+				</p>
+				<img src=${image}>
+			</article>
+		`;
+		$("#articulo-elegido").append(postSelected);
+		console.log(postSelected);
 		});
 	}
 });
