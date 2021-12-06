@@ -15,7 +15,6 @@ header{
 	height: 70px;
 	border: 2px solid black;
 	background: rgba(5, 5, 5, 0.5);
-	border-radius: 5% / 15%;
 }
 
 .cabeza{
@@ -47,7 +46,6 @@ h1{
 	padding-right: 10px;
 	width: 15%;
 	margin-left: 10%;
-	border-radius: 5% / 15%;
 }
 
 a{
@@ -62,8 +60,7 @@ a{
 	width: 98%;
 	height: 200px;
 	background: rgba(5, 5, 5, 0.5);
-	border: 2px solid black;	
-	border-radius: 5% / 15%;
+	border: 2px solid black;
 }
 
 .seccion div{
@@ -91,7 +88,7 @@ a{
 	position: absolute;
 	margin-top: 400px;
 	color: white;
-	right: 3%;
+	right: 25%;
 	background: rgba(5, 5, 5, 0.5);
 	border: 2px solid black;
 }
@@ -117,13 +114,12 @@ a{
 #articulo-elegido{
 	color: white;
 	width: 60%;
-	margin-top: 200px;
+	margin-top: 150px;
 	margin-left: 3%;
 	padding: 2%;
 	text-align: left;
 	border: 2px solid black;
 	background: rgba(5, 5, 5, 0.5);
-	border-radius: 5% / 15%;
 }
 
 #articulo-elegido p{
@@ -148,19 +144,17 @@ a{
 #aside{
 	float: right;
 	position: relative;
-	margin-top: 200px;
+	margin-top: 150px;
 	width: 280px;
 	height: 500px;
 	border: 2px solid black;
 	background: rgba(5, 5, 5, 0.5);
-	border-radius: 5% / 15%;
-
 }
 
 #contenido{
 	overflow: scroll;
-	width: 250px;
-	height: 460px;
+	width: 270px;
+	height: 480px;
 	border: 1px solid black;
 	margin-top: 10px;
 	margin-left: 10px;
@@ -192,10 +186,9 @@ a{
 #pie{
 	position: absolute;
 	background: black;
-	bottom: 0px;
+	margin-bottom: 2px;
 	left: 20px;
 	color: white;
 	font-size: 15px;
-	margin: 0;
-	margin-top: 20px;
+	margin-top: 10px;
 }

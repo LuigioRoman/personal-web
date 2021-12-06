@@ -104,18 +104,19 @@ $(document).ready(function(){
 		});
 		
 		$(".post").click(function(){
-			var title = posts[1].title;
-			var date = posts[1].date;
-			var content = posts[1].content;
-			var image = posts[1].image;
+			var title = this.getElementsByTagName("h2");
+			var date = this.getElementsByTagName("span");
+			var content = this.getElementsByTagName("p");
+			var image = this.getElementsByTagName("img");
+
 			var postSelected = `
 			<article class="postSelected">
-				<h2>${title}</h2>
-				<span class="date">${date}</span>
+				<h2>${title.innerHTML}</h2>
+				<span class="date">${date.innerHTML}</span>
 				<p>
-					${content}
+					${content.innerHTML}
 				</p>
-				<img src=${image}>
+				<img src=${image.innerHTML}>
 			</article>
 		`;
 		$("#articulo-elegido").append(postSelected);
